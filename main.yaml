@@ -1,0 +1,9 @@
+---
+- name: Startup script
+  hosts: all
+  tasks:
+    - name: install htop
+      package:
+        name: htop
+        state: present
+        update_cache: yes
